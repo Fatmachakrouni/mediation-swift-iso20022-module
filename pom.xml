@@ -92,6 +92,7 @@
                 <version>${maven.assembly.version}</version>
                 <executions>
                     <execution>
+                        <?m2e execute onConfiguration,onIncremental?>
                         <id>email-library</id>
                         <phase>compile</phase>
                         <goals>
@@ -127,6 +128,7 @@
                 <version>${maven.checkstyleplugin.version}</version>
                 <executions>
                     <execution>
+                        <?m2e execute onConfiguration?>
                         <id>validate</id>
                         <phase>validate</phase>
                         <configuration>

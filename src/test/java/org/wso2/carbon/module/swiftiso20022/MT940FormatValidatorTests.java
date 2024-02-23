@@ -26,12 +26,11 @@ import org.wso2.carbon.module.swiftiso20022.validation.common.ValidationResult;
 @PrepareForTest({ConnectorUtils.class})
 public class MT940FormatValidatorTests extends PowerMockTestCase {
 
-    private MessageContext messageContext;
     MT940FormatValidator mt940FormatValidator = new MT940FormatValidator();
 
     @BeforeClass
     public void init() {
-        messageContext = Mockito.spy(MessageContext.class);
+        Mockito.spy(MessageContext.class);
     }
 
     @Test
